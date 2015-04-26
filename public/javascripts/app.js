@@ -10,6 +10,9 @@
 		'App.controllers',
 		'App.services',
 	])
+	.constant('fbConfig', {
+		uri: 'https://<your-firebase>.firebaseio.com/'
+	})
 	.config(function($routeProvider, $locationProvider){
 
 		$routeProvider
