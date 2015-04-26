@@ -1,1 +1,1 @@
-h1 Testando
+A simple seed of expressjs + angularjs + firebase.
