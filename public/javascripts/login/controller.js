@@ -6,7 +6,6 @@
 
 	function LoginController($scope, toastr, Auth, $location){
 		var vm = this;
-		console.log('LoginController');
 
 		vm.login = function(){
 			if(!$scope.email && !$scope.password){
@@ -21,12 +20,10 @@
 					password : $scope.password
 				}).then(function(authData) {
 					if(authData) {
-						console.log("Authenticated successfully with payload:", authData);
 						$location.path("/dashboard");
 					}
 				}).catch(function(error){
 					if(error){
-						console.log(error);
 						switch(error.code){
 							case 'INVALID_USER':
 								toastr.error('Parece que este usuario ainda não foi cadastrado');

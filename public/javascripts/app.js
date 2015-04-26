@@ -11,7 +11,8 @@
 		'App.services',
 	])
 	.constant('fbConfig', {
-		uri: 'https://<your-firebase>.firebaseio.com/'
+		// uri: 'https://<your-firebase>.firebaseio.com/'
+		uri: 'https://ink-schedule.firebaseio.com'
 	})
 	.config(function($routeProvider, $locationProvider){
 

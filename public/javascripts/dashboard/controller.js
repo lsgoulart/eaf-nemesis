@@ -8,7 +8,6 @@
 			var vm = this;
 
 			vm.logout = function(){
-				console.log(Auth);
 				Auth.$unauth();
 				$location.path("/");
 			};
